@@ -1,7 +1,15 @@
 <style>
-    header {background:url("acme images/background.png")
 
-  }
+
+
+    header {
+            background-color:rgb(196,196,196);
+            margin-bottom: 20px;
+            border: 10px solid black
+
+    }
+
+
     img {float:left;
 
       }
@@ -16,23 +24,52 @@
 
         }
 
-    li   {
+    span {margin-left: 400px;
+
+
+
+      }
+
+     li   {
           display:inline;
-
-
 
         }
 
-    p {max-width:600px;
-        margin-left:auto;
-        padding:20px;
+    main{margin-left:auto;
+         margin-right:auto;
+         margin-top:30px;
+         max-width:800px;
+
+
+
+    }
+
+
+    }
+
+    p {  padding:50px;
+         font-size:20px;
+
+
+
       }
 
-  article {text-align:left;
+  article {
            padding:10px;
-           max-width:600px;
-           border:black 10px 
+           max-width:800px;
+           border:black 10px;
+           border-radius:30px;
+
   }
+
+
+    div   {
+            padding: 70px;
+
+
+  }
+
+
 
 
 
