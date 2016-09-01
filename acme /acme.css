@@ -2,29 +2,41 @@
 
 
 
-    header {
-            background-color:rgb(196,196,196);
-            margin-bottom: 20px;
-            border: 10px solid black
-
-    }
+          {
+            background-color:#c4c4c4;
 
 
-    img {float:left;
+
+          }
+
+
+
+    img {align:left;
 
       }
 
+    ul {
+        margin: 0 auto;
+        padding: 0px 40px 0px 100px;
+        float: right;
+
+
+    }
+
     button {
           background-color:#2A4CB2;
-          font-family:Lucida Grande;
+          font-family:"Lucida Grande";
           color:white;
           border-radius:5px;
           font-size:15px;
-          float:right;
+          margin:0 auto;
+
 
         }
 
-    span {margin-left: 400px;
+    li a {
+          text-decoration: none;
+          font-size: 15px;
 
 
 
@@ -32,24 +44,32 @@
 
      li   {
           display:inline;
+          padding: 20px 20px 20px 0px;
+
+          }
+
+    body {
+          background: url("acme images/background.png");
+          background-size:cover;
+          font-family: "Lucida Grande"
+          margin: 0;
+
+    }
+
+    main {
+         margin-top:50px;
+         margin-bottom:50px;
+         margin-top:50px;
+         padding: 20px 30px 40px 30px;
+         background-color:white;
+         border-radius:10px;
 
         }
 
-    main{margin-left:auto;
-         margin-right:auto;
-         margin-top:30px;
-         max-width:800px;
+     div p {font:30px;
 
 
-
-    }
-
-
-    }
-
-    p {  padding:50px;
-         font-size:20px;
-
+        }
 
 
       }
@@ -64,11 +84,22 @@
 
 
     div   {
-            padding: 70px;
+            padding: margin: auto;
+            max-width:80;
 
 
   }
 
+    footer p {
+              color: #c4c4c4;
+              border-top: 1px solid gray;
+              text-align:center;
+              padding-top: 40px;
+              font-size:10px;
+
+
+
+    }
 
 
 
