@@ -1,8 +1,15 @@
+body {
+    background: url("acme images/background.png");
+    font-family: "Lucida Grande";
+    margin: 0;
+}
+
 header {
     background-color: #c4c4c4;
     margin:0 auto;
     height: 70px;
     padding: 10px;
+
 
 }
 
@@ -26,7 +33,7 @@ button {
     font-family: "Lucida Grande";
     color: white;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 15px;
     margin: 0 auto;
     padding: 5px;
 }
@@ -42,11 +49,7 @@ li {
     padding: 20px 20px 20px 0px;
 }
 
-body {
-    background: url("acme images/background.png");
-    background-size: cover;
-    font-family: "Lucida Grande" margin: 0;
-}
+
 
 main {
     margin-top: 50px;
@@ -77,6 +80,6 @@ footer p {
     color: #c4c4c4;
     border-top: 1px solid gray;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
     font-size: 15px;
 }
