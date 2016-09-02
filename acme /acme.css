@@ -1,11 +1,9 @@
-<style>
 
 
 
-          {
+
+          header{
             background-color:#c4c4c4;
-
-
 
           }
 
@@ -24,7 +22,7 @@
     }
 
     button {
-          background-color:#2A4CB2;
+          background-color:red;
           font-family:"Lucida Grande";
           color:white;
           border-radius:5px;
@@ -73,7 +71,7 @@
         }
 
 
-      }
+
 
   article {
            padding:10px;
@@ -81,28 +79,21 @@
            border:black 10px;
            border-radius:30px;
 
-  }
+         }
 
 
     div   {
             padding: margin: auto;
             max-width:80;
 
-
-  }
+          }
 
     footer p {
               color: #c4c4c4;
               border-top: 1px solid gray;
               text-align:center;
               padding-top: 40px;
-              font-size:10px;
+              font-size:15px;
 
 
-
-    }
-
-
-
-
-</style>
+              }
