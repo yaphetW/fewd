@@ -8,22 +8,66 @@
 </head>
 
 <body>
+    <header>
+        <img src="acme images/acme-corp.jpg" width=200>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google"> Products </a> </li>
+                <li>
+                    <button> Sign Up </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Sign Up</h1>
+        <div class="form">
+            <form class="info" action="index.html" method="post">
 
-    <body>
-        <header>
-            <img src="acme images/acme-corp.jpg" width=200>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google"> Products </a> </li>
-                    <li>
-                        <button> Sign Up </button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
+        </div>
+        <p>
+            <label for="first name">First Name</label>
+            <input type="text" name="first name" value="" placeholder="John">
+        </p>
+        <p>
+            <label for="last name">Last Name</label>
+            <input type="text" name="Last Name" value="" placeholder="Doe">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="Email" value="" placeholder="john.doe@example.com">
+        </p>
+        <p>
+            <label for="Password">Password</label>
+            <input type="password" name="Password" value="">
+        </p>
+        <p>
+            <label for="how">How did you hear about us?</label>
+          </p>
+          <p>
+            <select class="text" name="how">
+                  <option value=""selected></option>
+                  <option value="Friend">Friend</option>
+                  <option value="Search">Search</option>
+                  <option value="Other">Other</option>
+                </select>
+        </p>
+        <p>
+            <input type="checkbox" name="terms" value="">
+            <label for="terms">Agree to our temrs of service</label>
 
-    </body>
+        </p>
+        </form>
+        <button>Sign Up</button>
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            Copyright, 2015
+        </p>
+    </footer>
+</body>
 
 </html>
