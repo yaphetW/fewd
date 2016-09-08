@@ -1,6 +1,7 @@
 * img {
     width: 150px;
-    height: 100px;
+    height: 150px;
+    margin: 15px 20px 20px 0;
 }
 
 header {
@@ -14,10 +15,10 @@ header {
 
 header img {
     float: left;
-    height: 80px
+    height: 70px;
 }
 
-ul {
+header ul {
     margin: 0 auto;
     padding: 0px 0px 0px 100px;
     float: right;
@@ -69,12 +70,20 @@ main {
 }
 
 .pest {
-    display: inline;
+    display:flex;
+    font-size:15px;
+}
+.pest section{
+    display:inline;
+    padding:20px 50px 30px 0;
+}
+.pest ul {
+    padding: 10px 20px 20px 0;
 }
 
 footer p {
     color: #c4c4c4;
-    border-top: 1px solid gray;
+    border-top: 1px solid lightgray;
     text-align: center;
     padding-top: 20px;
     font-size: 12px;
