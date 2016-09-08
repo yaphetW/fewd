@@ -6,11 +6,9 @@ body {
 
 header {
     background-color: #c4c4c4;
-    margin:0 auto;
+    margin: 0 auto;
     height: 70px;
     padding: 10px;
-
-
 }
 
 img {
@@ -24,8 +22,8 @@ ul {
 }
 
 nav {
-    float:right;
-    padding:10px 0 10px 10px;
+    float: right;
+    padding: 10px 0 10px 10px;
 }
 
 button {
@@ -48,8 +46,6 @@ li {
     display: inline;
     padding: 20px 20px 20px 0px;
 }
-
-
 
 main {
     margin-top: 50px;
