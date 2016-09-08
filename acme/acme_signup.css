@@ -1,0 +1,46 @@
+header {
+    background-color: #c4c4c4;
+    margin: 0 auto;
+    height: 70px;
+    padding: 10px;
+}
+ul {
+    margin: 0 auto;
+    padding: 0px 0px 0px 100px;
+    float: right;
+}
+
+nav {
+    float: right;
+    padding: 10px 0 10px 10px;
+}
+
+button {
+    background-color: #2A4CB2;
+    font-family: "Lucida Grande";
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+li {
+    display: inline;
+    padding: 20px 20px 20px 0px;
+}
+
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 20px 30px 40px 30px;
+    background-color: white;
+    border-radius: 10px;
+}
