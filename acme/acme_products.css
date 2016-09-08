@@ -8,6 +8,7 @@
 * div {
     display: flex;
     font-size: 15px;
+    border-bottom: 1px solid lightgray;
 }
 
 * section {
@@ -18,7 +19,6 @@
 
 * ul {
     padding: 10px 20px 20px 0;
-
 }
 
 header {
@@ -32,8 +32,11 @@ header {
 
 header img {
     float: left;
-    height: 60px;
     border:none;
+    padding: center;
+    height: 60px;
+    width: 250px;
+
 }
 
 header ul {
@@ -52,7 +55,7 @@ button {
     font-family: "Lucida Grande";
     color: white;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 13px;
     margin: 0 auto;
     padding: 5px;
     text-shadow: 1px 1px gray;
@@ -86,12 +89,27 @@ main {
     border-radius: 12px;
     box-shadow: 3px 3px 5px rgba(194, 194, 194, 0.4);
 }
-
+* div a {
+    color:blue;
+    font-size:15px;
+    text-shadow: 1px 1px white;
+    font-family:"Lucida Grande";
+}
+*div button {
+    padding:20px;
+    font-size:15px;
+    font-family:"Lucida Grande";
+    background-color: #2A4CB2;
+    text-shadow: 1px 1px blue;
+}
+.artificial{
+    border-bottom: none;
+}
 footer p {
     color: #c4c4c4;
     border-top: 1px solid lightgray;
     text-align: center;
     padding-top: 20px;
     font-size: 12px;
-    text-shadow: 1px 1px gray;
+    text-shadow: 1px 1px rgb (240, 239, 238);
 }
