@@ -1,0 +1,42 @@
+header {
+    background-color: #c4c4c4;
+    margin: 0 auto;
+    height: 70px;
+    padding: 10px;
+}
+
+main {
+    background: white;
+    margin: 30px auto 30px auto;
+    width: 80%;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 3px 3px 5px rgba(194, 194, 194, 0.4);
+}
+
+footer p {
+    color: #c4c4c4;
+    border-top: 1px solid lightgray;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    text-shadow: 1px 1px rgb (240, 239, 238);
+    margin: 30px auto 30px auto;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0px 0px 0px 100px;
+    float: right;
+}
+
+nav {
+    float: right;
+    padding: 10px 0 10px 10px;
+}
