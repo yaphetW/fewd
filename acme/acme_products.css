@@ -1,23 +1,23 @@
-* img {
+img {
     width: 150px;
     height: 150px;
     margin: 15px 20px 20px 0;
     border: 2px double lightgray;
 }
 
-* div {
+div {
     display: flex;
     font-size: 15px;
     border-bottom: 1px solid lightgray;
 }
 
-* section {
+section {
     display: inline;
     padding: 10px 50px 30px 0;
     text-align: left;
 }
 
-* ul {
+ul {
     padding: 10px 20px 20px 0;
 }
 
@@ -69,7 +69,7 @@ li a {
 
 li {
     display: inline;
-    padding: 20px 20px 20px 0px;
+    padding: 20px 20px 20px 0;
 }
 
 body {
@@ -81,7 +81,7 @@ body {
 
 main {
     background: white;
-    margin: 30px auto 30px auto;
+    margin: 30px auto;
     width: 80%;
     padding: 35px;
     background-color: white;
@@ -89,14 +89,14 @@ main {
     box-shadow: 3px 3px 5px rgba(194, 194, 194, 0.4);
 }
 
-* div a {
+div a {
     color: blue;
     font-size: 15px;
     text-shadow: 1px 1px white;
     font-family: "Lucida Grande";
 }
 
-*div button {
+div button {
     padding: 20px;
     font-size: 15px;
     font-family: "Lucida Grande";
@@ -115,5 +115,9 @@ footer p {
     padding-top: 20px;
     font-size: 12px;
     text-shadow: 1px 1px rgb (240, 239, 238);
-    margin: 30px auto 30px auto;
+    margin: 30px 0;
+}
+footer {
+    margin: 0 auto;
+    width: 80%;
 }

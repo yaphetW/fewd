@@ -1,9 +1,13 @@
-
 header {
     background-color: #c4c4c4;
     margin: 0 auto;
     height: 70px;
     padding: 10px;
+}
+label {
+    display:inline-block;
+    width: 300px;
+
 }
 .email: {
     border: 1px solid red;
@@ -58,11 +62,11 @@ li {
     padding: 20px 20px 20px 0px;
 }
 
-div {
-    display: block;
-}
 
-footer p {
+.bottom {
+    margin: 0;
+}
+footer p{
     color: #c4c4c4;
     border-top: 1px solid lightgray;
     text-align: center;
@@ -70,4 +74,8 @@ footer p {
     font-size: 12px;
     text-shadow: 1px 1px rgb (240, 239, 238);
     margin: 30px auto 30px auto;
+}
+footer {
+    width: 80%;
+    margin: 0 auto;
 }
