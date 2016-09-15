@@ -17,16 +17,16 @@ header li {
 }
 
 ul {
-    margin:0 auto;
+    margin: 0 auto;
     float: right;
 }
 
 button {
-    background: rgb(6,148,86);
+    background: rgb(6, 148, 86);
     color: white;
     border-radius: 5px;
     font-size: 15px;
     text-shadow: 1px 1px rgb (6, 148, 86);
     padding: 5px;
-
+    box-sizing:border-box;
 }
