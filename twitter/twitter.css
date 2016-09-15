@@ -1,0 +1,22 @@
+header {
+    background-color: rgb(26, 177, 113);
+    height: 50px;
+    padding: 10px;
+    color: white;
+}
+
+h1 {
+    margin: 0 auto;
+    float: left;
+}
+
+header li {
+    display: inline;
+    float: right;
+    padding: 5px;
+}
+
+ul {
+    margin: 0 10px 40px 400px;
+    float: right;
+}
