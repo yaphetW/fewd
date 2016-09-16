@@ -1,7 +1,39 @@
-<script type="text/javascript">
+<!DOCTYPE html>
+<html>
 
-  var a = 15;
-  var b = 16;
-  console.log (a + b);
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/master.css" media="screen" title="no title">
+</head>
 
-</script>
+<body>
+    <p>
+        Calculator
+    </p>
+    <form class="" action="index.html" method="post">
+        <input type="text" name="name" value="15" class="num-1"> +
+        <input type="text" name="name" value="16" class="num-2"> =
+        <input type="text" name="name" value="" class="result" disabled>
+    </form>
+    <p>
+        <button type="button" name="add">Add</button>
+    </p>
+    <script type="text/javascript">
+        // var a = 15;
+        // var b = 16;
+        // console.log(a + b);
+
+        var a = document.querySelector (".num-1");
+        var b = document.querySelector (".num-2");
+
+        var n = a.value;
+        var m = b.value;
+
+        console.log (n);
+        console.log (m);
+
+    </script>
+</body>
+
+</html>
