@@ -21,6 +21,19 @@ ul {
     float: right;
 }
 
+body {
+    background: rgb(241,240,245);
+}
+
+main {
+    background: white;
+    margin: 30px auto 30px auto;
+    width: 80%;
+    padding: 35px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(194, 194, 194, 0.4);
+}
 button {
     background: rgb(6, 148, 86);
     color: white;
@@ -29,4 +42,22 @@ button {
     text-shadow: 1px 1px rgb (6, 148, 86);
     padding: 5px;
     box-sizing:border-box;
+}
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+textarea{
+    border-radius:5px;
+    width: 450px;
+    border: 1px solid lightgray;
+    color: gray;
+    padding: 5px;
+}
+.first {
+    display:flex;
+  }
+.second {
+   display:flex;
 }
