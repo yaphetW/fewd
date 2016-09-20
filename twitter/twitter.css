@@ -1,8 +1,11 @@
 header {
-    background-color: rgb(26, 177, 113);
-    height: 50px;
+    background: linear-gradient(180deg, rgb(36, 192, 126), rgb(8, 150, 90));
+    height: 60px;
     padding: 10px;
     color: white;
+    font-family: "Arial";
+    width: 100%;
+    margin: 0 auto;
 }
 
 h1 {
@@ -19,10 +22,12 @@ header li {
 ul {
     margin: 0 auto;
     float: right;
+    margin-right: 20px;
 }
 
 body {
     background: rgb(241, 240, 245);
+    font-family: "Arial";
 }
 
 main {
@@ -42,7 +47,7 @@ button {
     font-size: 15px;
     text-shadow: 1px 1px rgb (6, 148, 86);
     padding: 5px;
-    box-sizing: border-box;
+    border: 0.5px solid rgb(8, 119, 69);
 }
 
 img {
@@ -73,30 +78,52 @@ textarea {
 .second {
     display: flex;
     max-width: 500px;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
 }
 
 .third {
     display: flex;
     margin: 20px 0 0 0;
     max-width: 500px;
+    border-bottom: 1px solid lightgrey;
 }
 
 .fourth {
     display: flex;
     margin: 20px 0 0 0;
     max-width: 500px;
-
 }
+
 .like {
     color: rgb(6, 148, 86);
-    text-decoration: none;
+    font-weight: bold;
     font-size: 15px;
+    text-decoration: none;
 }
+
 .numbers {
     color: lightgrey;
     margin-left: 0;
+    text-decoration: none;
 }
 
 a {
-  margin: 0 0 0 70px;
+    margin: 0 0 20px 0;
+}
+
+footer li {
+    display: inline;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(180, 180, 180);
+    margin: 0 auto;
+}
+
+footer {
+    margin: 0 100px 20px 0;
+    padding: 20px;
 }
