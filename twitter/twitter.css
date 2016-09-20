@@ -49,7 +49,7 @@ img {
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    margin: 0 10px 0 0;
+    margin: 20px 10px 0 0;
 }
 
 textarea {
@@ -58,6 +58,7 @@ textarea {
     border: 1px solid lightgray;
     color: gray;
     padding: 5px;
+    margin-top: 20px;
 }
 
 .tweetbutton {
@@ -71,17 +72,20 @@ textarea {
 
 .second {
     display: flex;
-    margin: 20px 0 0 0;
+    max-width: 500px;
 }
 
 .third {
     display: flex;
     margin: 20px 0 0 0;
+    max-width: 500px;
 }
 
 .fourth {
     display: flex;
     margin: 20px 0 0 0;
+    max-width: 500px;
+
 }
 .like {
     color: rgb(6, 148, 86);
@@ -92,10 +96,7 @@ textarea {
     color: lightgrey;
     margin-left: 0;
 }
-p {
-  max-width: 400px;
-  margin: 0 auto;
-}
+
 a {
-  margin: 0 0 20px 70px;
+  margin: 0 0 0 70px;
 }
