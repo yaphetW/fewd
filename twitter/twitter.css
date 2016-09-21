@@ -19,10 +19,10 @@ header li {
     padding: 5px;
 }
 
-/*ul {
+nav {
     margin: 0 auto;
-    float: right;
-}*/
+    text-align: center;
+}
 
 body {
     background: rgb(241, 240, 245);
@@ -123,8 +123,8 @@ footer li {
 
 footer {
     width: 100%;
-    padding: 20px;
 }
+
 footer nav {
     margin: 0 auto;
     width: 80%;
