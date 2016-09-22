@@ -160,12 +160,17 @@
     </table>
 
     <script>
+
         document.querySelector(".document-title").value = document.title;
+        //start with giving a variable to the value of "first-name" and "second name" classes
         var fname = document.querySelector(".first-name").value;
         var lname = document.querySelector(".last-name").value;
+        //then add the two variables' values and find the class "full-name and put result there"
         document.querySelector(".full-name").value = fname + " " + lname;
+        //start with finding and giving a variable to the value of "a1" while making sure to parseInt it
         var a1 = parseInt(document.querySelector(".a1").value);
         var b0 = parseInt(document.querySelector(".b0").value);
+        //then find b1 and give it the value of a1 * b0
         document.querySelector(".b1").value = a1 * b0;
         var a2 = parseInt(document.querySelector(".a2").value);
         document.querySelector(".b2").value = a2 * b0;
