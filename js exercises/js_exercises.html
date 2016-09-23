@@ -160,7 +160,6 @@
     </table>
 
     <script>
-
         document.querySelector(".document-title").value = document.title;
         //start with giving a variable to the value of "first-name" and "second name" classes
         var fname = document.querySelector(".first-name").value;
@@ -168,42 +167,24 @@
         //then add the two variables' values and find the class "full-name and put result there"
         document.querySelector(".full-name").value = fname + " " + lname;
         //start with finding and giving a variable to the value of "a1" while making sure to parseInt it
-        var a1 = parseInt(document.querySelector(".a1").value);
-        var b0 = parseInt(document.querySelector(".b0").value);
-        //then find b1 and give it the value of a1 * b0
-        document.querySelector(".b1").value = a1 * b0;
-        var a2 = parseInt(document.querySelector(".a2").value);
-        document.querySelector(".b2").value = a2 * b0;
-        var a3 = parseInt(document.querySelector(".a3").value);
-        document.querySelector(".b3").value = a3 * b0;
-        var a4 = parseInt(document.querySelector(".a4").value);
-        var b4 = document.querySelector(".b4").value = a4 * b0;
-        var a5 = parseInt(document.querySelector(".a5").value);
-        var b5 = document.querySelector(".b5").value = a5 * b0;
-        var c0 = parseInt(document.querySelector(".c0").value);
-        var c1 = document.querySelector(".c1").value = a1 * c0;
-        var c2 = document.querySelector(".c2").value = a2 * c0;
-        var c3 = document.querySelector(".c3").value = a3 * c0;
-        var c4 = document.querySelector(".c4").value = a4 * c0;
-        var c5 = document.querySelector(".c5").value = a5 * c0;
-        var d0 = parseInt(document.querySelector(".d0").value);
-        var d1 = document.querySelector(".d1").value = a1 * d0;
-        var d2 = document.querySelector(".d2").value = a2 * d0;
-        var d3 = document.querySelector(".d3").value = a3 * d0;
-        var d4 = document.querySelector(".d4").value = a4 * d0;
-        var d5 = document.querySelector(".d5").value = a5 * d0;
-        var e0 = parseInt(document.querySelector(".e0").value);
-        var e1 = document.querySelector(".e1").value = a1 * e0;
-        var e2 = document.querySelector(".e2").value = a2 * e0;
-        var e3 = document.querySelector(".e3").value = a3 * e0;
-        var e4 = document.querySelector(".e4").value = a4 * e0;
-        var e5 = document.querySelector(".e5").value = a5 * e0;
-        var f0 = parseInt(document.querySelector(".f0").value);
-        var f1 = document.querySelector(".f1").value = a1 * f0;
-        var f2 = document.querySelector(".f2").value = a2 * f0;
-        var f3 = document.querySelector(".f3").value = a3 * f0;
-        var f4 = document.querySelector(".f4").value = a4 * f0;
-        var f5 = document.querySelector(".f5").value = a5 * f0;
+        function multiply(row, column, output) {
+            var n = parseInt(document.querySelector(column).value);
+            var m = parseInt(document.querySelector(row).value);
+            document.querySelector(output).value = m * n;
+        };
+
+        function entireRow(row) {
+        multiply(".a1", "." + row + "0 ", "." + row + "1");
+        multiply(".a2", "." + row + "0 ", "." + row + "2");
+        multiply(".a3", "." + row + "0 ", "." + row + "3");
+        multiply(".a4", "." + row + "0 ", "." + row + "4");
+        multiply(".a5", "." + row + "0 ", "." + row + "5");
+}
+        entireRow("b");
+        entireRow("c");
+        entireRow("d");
+        entireRow("e");
+        entireRow("f");
     </script>
 </body>
 
