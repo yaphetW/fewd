@@ -79,19 +79,42 @@
         </nav>
     </footer>
 
-      <script type="text/javascript">
-      var tweet = document.createElement("div");
-      var first_text = document.querySelector ("first_text");
-      first_text.appendChild(tweet);
-      tweet.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed di eiusmod tempor incididunt ut labore et dolore magna";
+    <script type="text/javascript">
+        //Attaching the event to the button
+        var button = document.querySelector(".tweetbutton");
+        button.addEventListener("click", createTweet);
+        console.log(button);
 
+        //Telling what the event should do once it calls it
+        function createTweet(event) {
+            event.preventDefault();
+            console.log("testing");
 
+            var tweet = document.createElement("div");
+            tweet.setAttribute("class", "fifth");
 
+            var img = document.createElement("img");
+            img.setAttribute("src", "twitter_images/funnyface1.jpg");
+            tweet.appendChild(img);
 
-      </script>
+            var section = document.createElement("section");
+            tweet.appendChild(section);
+
+            var textarea = document.querySelector("textarea").value;
+            console.log(textarea);
+
+            var article = document.createElement("article");
+            article.textContent = textarea;
+            tweet.appendChild(article);
+
+            var like = document.createElement("like");
+            like.textContent = "Like";
+            tweet.appendChild(like);
+
+            document.querySelector("main").appendChild(tweet);
+            //reset form
+            document.querySelector("textarea").value = "";
+        }
+    </script>
 </body>
-
-
-
-
 </html>

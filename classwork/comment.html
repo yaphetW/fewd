@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style media="screen">
+  .comment {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em;
+  }
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>comment</title>
+    <div id="container">
+      <div class="comment">
+        This is a comment!
+      </div>
+    </div>
+  </head>
+  <script type="text/javascript">
+  var button = document.querySelector("button");
+  function makeASurpriseComment (event) {
+    event.preventDefault ();
+    createComment("Surprise!!!");
+
+  }
+
+  function createComment(commentContent){
+var commentDiv = document.createElement("div");
+
+
+
+
+  //creating the comment div
+    //setting the texgt conetent of the div
+    commentDiv.textContent = commentContent;
+    //adding a class to the div of "comment"
+    commentDiv.classList.add("comment");
+    //appending the div to the container div, which has the ID "container"
+    var parent = document.querySelector ("#container");
+    parent.appendChild(commentDiv);
+  }
+  </script>
+  <body>
+
+  </body>
+</html>
