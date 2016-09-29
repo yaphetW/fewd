@@ -117,4 +117,224 @@
         }
     </script>
 </body>
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="twitter.css" media="screen" title="no title">
+</head>
+<header>
+    <h1>Twitter</h1>
+    <nav>
+        <ul>
+            <li><button type="button" name="LogIn">Log In</button>
+            </li>
+            <li><button type="button" name="SignUp">Sign Up</button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <div class="first">
+            <img src="twitter_images/funnyface2.jpg" alt="" />
+            <div class="comment">
+                <textarea class="first_text" rows="3" cols="100" placeholder="What's happening?"></textarea>
+            </div>
+        </div>
+        <a div class="tweetbutton" href="#"><button type="button" name="Tweet">Tweet</button></a>
+
+        <div class="second">
+            <img src="twitter_images/funnyface1.jpg" alt="" />
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a div class="like" href="#">Like</a>
+                <a div class="numbers" href="#">(12)</a>
+            </div>
+        </div>
+
+        <div class="third">
+            <img src="twitter_images/funnyface3.png" alt="" />
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+                </p>
+                <p>
+                    <a div class="like" href="#">Like</a>
+                    <a div class="numbers" href="#">(6)</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="fourth">
+            <img src="twitter_images/funnyface4.jpg" alt="" />
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p>
+                    <a div class="like" href="#">Like</a>
+                    <a div class="numbers" href="#">(54)</a>
+                </p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script type="text/javascript">
+        var tweet = document.createElement("div");
+        var first_text = document.querySelector(".first_text");
+        first_text.appendChild(tweet);
+        tweet.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed di eiusmod tempor incididunt ut labore et dolore magna";
+    </script>
+</body>
+
+
+
+
 </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="twitter.css" media="screen" title="no title">
+</head>
+<header>
+    <h1>Twitter</h1>
+    <nav>
+        <ul>
+            <li><button type="button" name="LogIn">Log In</button>
+            </li>
+            <li><button type="button" name="SignUp">Sign Up</button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <div class="first">
+            <img src="twitter_images/funnyface2.jpg" alt="" />
+            <div class="comment">
+                <textarea name="first_text" rows="3" cols="100">What's happening?</textarea>
+            </div>
+        </div>
+        <a div class="tweetbutton" href="#"><button type="button" name="Tweet">Tweet</button></a>
+
+        <div class="second">
+            <img src="twitter_images/funnyface1.jpg" alt="" />
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a div class="like" href="#">Like</a>
+                <a div class="numbers" href="#">(12)</a>
+            </div>
+        </div>
+
+        <div class="third">
+            <img src="twitter_images/funnyface3.png" alt="" />
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+                </p>
+                <p>
+                    <a div class="like" href="#">Like</a>
+                    <a div class="numbers" href="#">(6)</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="fourth">
+            <img src="twitter_images/funnyface4.jpg" alt="" />
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p>
+                    <a div class="like" href="#">Like</a>
+                    <a div class="numbers" href="#">(54)</a>
+                </p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script type="text/javascript">
+        //Attaching the event to the button
+        var button = document.querySelector(".tweetbutton");
+        button.addEventListener("click", createTweet);
+        console.log(button);
+
+        //Telling what the event should do once it calls it
+        function createTweet(event) {
+            event.preventDefault();
+            console.log("testing");
+
+            var tweet = document.createElement("div");
+            tweet.setAttribute("class", "fifth");
+
+            var img = document.createElement("img");
+            img.setAttribute("src", "twitter_images/funnyface1.jpg");
+            tweet.appendChild(img);
+
+            var section = document.createElement("section");
+            tweet.appendChild(section);
+
+            var textarea = document.querySelector("textarea").value;
+            console.log(textarea);
+
+            var article = document.createElement("article");
+            article.textContent = textarea;
+            tweet.appendChild(article);
+
+            var like = document.createElement("like");
+            like.textContent = "Like";
+            tweet.appendChild(like);
+
+            document.querySelector("main").appendChild(tweet);
+            //reset form
+            document.querySelector("textarea").value = "";
+        }
+    </script>
+</body>
+
+
+
+
+</html></html>
