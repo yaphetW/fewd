@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Likes &amp; Comments</title>
+
+    <link rel="stylesheet" href="likesandcomments.css" media="screen" charset="utf-8">
+</head>
+
+<body>
+    <main>
+        <article>
+            <h1>The Challenges of Programming</h1>
+
+            <p>
+                Programming can be tough... lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <ul>
+                <li>lorem</li>
+                <li>ipsum</li>
+                <li>dolor</li>
+            </ul>
+
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </article>
+
+        <div class="like">
+            <a href="#" class="like-link">Like</a> (
+            <span class="like-count">0</span>)
+        </div>
+
+        <div id="comments">
+            <!--
+        <div class="comment">
+          You're looking good!
+        </div>
+        -->
+        </div>
+
+        <form id="new-comment">
+            <textarea id="new-comment-body" class="new-comment-box" placeholder="Leave a comment..."></textarea>
+            <button type="submit" class="button">Comment</button>
+        </form>
+    </main>
+
+    <script src="script.js">
+        //grab the button
+        var button = document.querySelector(".button");
+        //add event listener to button
+        button.addEventListener("click", makeComment);
+        //add a function to the event
+        function makeComment(event) {
+            event.preventDefault();
+
+            var newcomm = document.createElement("p");
+            newcomm.setAttribute("class", "comment");
+
+            newcomm.textContent = document.querySelector("#new-comment-body").value;
+            //go back to empty box after comment
+            document.querySelector("#new-comment-body").value = "";
+            //display the new comment on the text area
+            var body = document.querySelector("#comments");
+            body.appendChild(newcomm);
+        }
+        var link = document.querySelector(".like");
+        var span = parseInt(document.querySelector(".like-count").textContent);
+        link.addEventListener("click".llikeCounter);
+
+        function likeCount(event) {
+            event.preventDefault();
+            span = span + 1;
+            document.querySelector("like-count").textContent = span;
+        }
+    </script>
+</body>
+
+</html>
