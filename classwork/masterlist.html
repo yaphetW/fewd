@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nested_loops</title>
+
+  </head>
+  <body>
+
+  <ul>
+    <li>cows,horses,dogs,cats</li>
+    <li>porshe,vw,audi</li>
+    <li>homework,grocery shopping</li>
+  </ul>
+
+  <script type="text/javascript">
+  var masterList = document.querySelectorAll("li");
+//outerloop
+  for (var i = 0; i < masterList.length; i++) {
+    console.log(masterList[i]);
+    var nouns = masterList[i].textContent.split(",");
+    console.log(nouns.length);
+//inner loop
+    for (var j = 0; j < nouns.length; j++) {
+      console.log(nouns[j])
+    }
+  }
+
+  </script>
+
+  </body>
+</html>
