@@ -47,33 +47,33 @@
         </form>
     </main>
 
-    <script src="script.js">
+    <script>
         //grab the button
         var button = document.querySelector(".button");
         //add event listener to button
         button.addEventListener("click", makeComment);
         //add a function to the event
         function makeComment(event) {
-            event.preventDefault();
+          event.preventDefault();
 
-            var newcomm = document.createElement("p");
-            newcomm.setAttribute("class", "comment");
+            var newComm = document.createElement("p");
+            newComm.setAttribute("class", "comment");
 
-            newcomm.textContent = document.querySelector("#new-comment-body").value;
+            newComm.textContent = document.querySelector("#new-comment-body").value;
             //go back to empty box after comment
             document.querySelector("#new-comment-body").value = "";
             //display the new comment on the text area
             var body = document.querySelector("#comments");
-            body.appendChild(newcomm);
+            body.appendChild(newComm);
         }
-        var link = document.querySelector(".like");
+        var link = document.querySelector(".like-link");
         var span = parseInt(document.querySelector(".like-count").textContent);
-        link.addEventListener("click".llikeCounter);
+        link.addEventListener("click", likeCounter);
 
-        function likeCount(event) {
+        function likeCounter(event) {
             event.preventDefault();
             span = span + 1;
-            document.querySelector("like-count").textContent = span;
+            document.querySelector(".like-count").textContent = span;
         }
     </script>
 </body>
