@@ -9,12 +9,12 @@
 </head>
 <header>
     Today's Todos
-    <span> 0 todos  </span>
+    <span class="count"> 0 todos  </span>
 </header>
 
 <body>
     <div class="search">
-        <input type="text" name="type" value="" placeholder="What do you need to do today?">
+        <input class="box" type="text" name="type" value="" placeholder="What do you need to do today?">
         <button type="button" name="create">Create</button>
     </div>
     <span class="nothing">
@@ -37,9 +37,9 @@
         button.addEventListener("click", add);
 
         function add(event) {
-            var list = document.querySelector(".search").value;
-            list = list.split(",");
-            for (var j = 0; j < list.length; j++) {
+            var box = document.querySelector(".box").value;
+            box = box.split(",");
+            for (var j = 0; j < box.length; j++) {
 
                 var things = document.createElement("li");
                 document.querySelector("ul").appendChild(things);
@@ -50,7 +50,7 @@
                 var newInput = document.createElement("input");
                 newInput.setAttribute("type", "checkbox");
                 newLabel.appendChild(newInput);
-                
+
                 document.querySelector(".nothing").style.display = "none";
                 document.querySelector(".search").value = "";
                 document.querySelector(".count").textContent = ++i;
@@ -58,7 +58,7 @@
                 var newSpan = document.createElement("span");
                 newLabel.appendChild(newSpan);
                 newSpan.style.marginLeft = 5 + "px";
-                newSpan.textContent = list[j];
+                newSpan.textContent = box[j];
             }
         };
     </script>
