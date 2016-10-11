@@ -1,39 +1,39 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <form>
-  <input type="search" id="query" placeholder="GitHub username">
-  <input type="submit" value="Lookup">
+    <input type="search" id="query" placeholder="GitHub username">
+    <input type="submit" value="Lookup">
 </form>
 
 <table>
-  <tr>
-    <th>Name:</th>
-    <td id="user-name"></td>
-  </tr>
-  <tr>
-    <th>Bio:</th>
-    <td id="user-bio"></td>
-  </tr>
-  <tr>
-    <th>Picture:</th>
-    <td id="user-picture"></td>
-  </tr>
+    <tr>
+        <th>Name:</th>
+        <td id="user-name"></td>
+    </tr>
+    <tr>
+        <th>Bio:</th>
+        <td id="user-bio"></td>
+    </tr>
+    <tr>
+        <th>Picture:</th>
+        <td id="user-picture"></td>
+    </tr>
 </table>
 
 <script>
-// Your code goes here...
+    // Your code goes here...
     var form = document.querySelector("form");
     form.addEventListener("submit", getResults);
 
-    function getResults(event){
-      event.preventDefault();
-      var url = "http://proxy.avandamiri.com/get?url=https://api.github.com/users/avand";
-      $.get(url, receive);
+    function getResults(event) {
+        event.preventDefault();
+        var url = "http://proxy.avandamiri.com/get?url=https://api.github.com/users/avand";
+        $.get(url, receive);
 
     }
 
     function receive(results) {
-      console.log(results.name);
+        console.log(results.name);
     }
 
     function getResults(results) {
@@ -44,10 +44,16 @@
     var bio = document.querySelector("#user-bio");
     var picture = document.querySelector("#user-picture");
 
+    // Vanilla
+ var img = document.createElement("img");
+ img.setAttribute("src", results.image);
+ document.querySelector("#user-picture").appendChild(img);
 
+ // Expanded jQuery
+ var img = $("<img>")
+ img.attr("src", results.image);
+ $("#user-picture").append(img);
 
-
-
-
-
+ // Condensed (chained) jQuery
+ $("<img>").attr("src", results.image).appendTo("#user-picture");
 </script>

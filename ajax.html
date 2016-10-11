@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>AJAX Example</title>
-    <script src = "jquery-3.1.1.js"type="text/javascript">
+    <script src="jquery-3.1.1.js" type="text/javascript">
     </script>
-  </head>
-  <body>
+</head>
 
-<script>
+<body>
 
-  $.get("https://api.github.com/users/avand",getResults);
-  function getResults(results){
-    console.log(results.bio);
+    <script>
+        $.get("https://api.github.com/users/avand", getResults);
 
-
-  }
-
-
+        function getResults(results) {
+            console.log(results.bio);
+        }
     </script>
 
-  </body>
+</body>
+
 </html>

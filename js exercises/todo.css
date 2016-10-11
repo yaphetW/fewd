@@ -1,0 +1,16 @@
+body {
+  background: lightgray;
+}
+.count {
+  float: right;
+  }
+header {
+  margin: 40px;
+  font-size: 30px;
+}
+.search{
+  text-align: center;
+}
+.type {
+  size: 40px;
+}
