@@ -1,5 +1,5 @@
 body {
-  background: lightgray;
+  background: rgb(240,240,240);
 }
 .count {
   float: right;
@@ -12,5 +12,20 @@ header {
   text-align: center;
 }
 .type {
-  size: 40px;
+  width: 400px;
+  height: 25px;
+  border-radius: 4px;
+  margin: 10px 5px 10px 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+button {
+  background-color:rgb(27,157,214);
+  color: white;
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(27,157,214);
+  font-size: 15px;
 }
