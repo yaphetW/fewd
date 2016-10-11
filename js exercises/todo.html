@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Todo</title>
     <link rel="stylesheet" href="todo.css" media="screen" title="no title">
-  </head>
-    <header>
-        Today's Todos
-      <div class="count">
-      0 todos
-      </div>
 
-    </header>
-  <body>
+</head>
+<header>
+    Today's Todos
+    <span> 0 todos  </span>
+</header>
+
+<body>
     <div class="search">
-    <input type="text" name="type" value=""placeholder="What do you need to do today?"class="type">
-    <button type="button" name="create">Create</button>
+        <input type="text" name="type" value="" placeholder="What do you need to do today?">
+        <button type="button" name="create">Create</button>
     </div>
-    <li>
-      <label for="checkbox">
+    <span class="nothing">
+    Nothing to do
+  </span>
+
+    <ul>
+        <li>
+            <label for="checkbox">
     <input type="checkbox" name="todos" value="">
+
     <span>Buy some milk</span>
     </label>
-    </li>
-  </body>
+        </li>
+    </ul>
+
+    <script>
+        var i = 0;
+        var button = document.querySelector("button");
+        button.addEventListener("click", add);
+
+        function add(event) {
+            var list = document.querySelector(".search").value;
+            list = list.split(",");
+            for (var j = 0; j < list.length; j++) {
+
+                var things = document.createElement("li");
+                document.querySelector("ul").appendChild(things);
+
+                var newLabel = document.createElement("label");
+                things.appendChild(newLabel);
+
+                var newInput = document.createElement("input");
+                newInput.setAttribute("type", "checkbox");
+                newLabel.appendChild(newInput);
+                
+                document.querySelector(".nothing").style.display = "none";
+                document.querySelector(".search").value = "";
+                document.querySelector(".count").textContent = ++i;
+
+                var newSpan = document.createElement("span");
+                newLabel.appendChild(newSpan);
+                newSpan.style.marginLeft = 5 + "px";
+                newSpan.textContent = list[j];
+            }
+        };
+    </script>
+</body>
+
 </html>

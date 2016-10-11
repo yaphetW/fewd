@@ -1,7 +1,7 @@
 body {
   background: rgb(240,240,240);
 }
-.count {
+header span {
   float: right;
   }
 header {
@@ -18,6 +18,7 @@ header {
   margin: 10px 5px 10px 10px;
   padding: 5px;
   font-size: 15px;
+  border: 1px solid lightgray;
 }
 button {
   background-color:rgb(27,157,214);
@@ -28,4 +29,7 @@ button {
   margin-bottom: 10px;
   border: 1px solid rgb(27,157,214);
   font-size: 15px;
+}
+.nothing {
+  margin:30px 0 10px 250px;
 }
