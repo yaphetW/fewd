@@ -1,0 +1,18 @@
+body {
+    background: rgb(57,57,57);
+    color: white;
+}
+img{
+    width: 150px;
+    height:250px;
+    display: inline-block;
+    margin: 15px;
+}
+header{
+    color:rgb(240,240,240);
+}
+li{
+  float: right;
+  margin: 0 0 0 10px;
+  display:block;
+}
