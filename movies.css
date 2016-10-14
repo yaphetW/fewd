@@ -1,18 +1,18 @@
 body {
     background: rgb(57,57,57);
     color: white;
+    display: inline-block;
 }
 img{
     width: 150px;
-    height:250px;
+    height:200px;
     display: inline-block;
-    margin: 15px;
+    margin: 10px;
 }
 header{
     color:rgb(240,240,240);
 }
-li{
+ul{
   float: right;
-  margin: 0 0 0 10px;
-  display:block;
+  display: block;
 }
