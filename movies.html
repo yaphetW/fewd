@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>movie search</title>
     <link rel="stylesheet" href="movies.css" media="screen" title="no title">
+    <script src="jquery-3.1.1.js" type="text/javascript">
+    </script>
 </head>
 <header>
     <h1>My Favorite Movies</h1>
@@ -34,7 +36,7 @@
       </tr>
       <tr>
         <th>Plot </th>
-        <td id="plot">  </td>
+        <td id="plot"> </td>
       </tr>
 
     </table>
@@ -51,14 +53,26 @@
 
     <script type="text/javascript">
 
-      document.querySelector
+    var thumbnails = document.querySelectorAll(".images");
 
+    for (var i = 0; i < thumbnails.length; i++) {
+      thumbnails[i].addEventListener("click", getInfo);
+    }
 
+    function getInfo (event) {
+    var selected = event.target;
+    var movieId = selected.id;
+    var url = "https://omdbapi.com/?i=" + movieId;
 
-
-
-
-
+    $.get(url, display);
+  }
+    function display (results) {
+      document.querySelector("#title").textContent = results.Title;
+      document.querySelector("#year").textContent = results.Year;
+      document.querySelector("#rating").textContent = results.Rating;
+      document.querySelector("#runtime").textContent = results.Runtime;
+      document.querySelector("#plot").textContent = results.Plot;
+    }
 
     </script>
 
