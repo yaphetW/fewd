@@ -9,10 +9,20 @@ img{
     display: inline-block;
     margin: 10px;
 }
+.images{
+  max-width: 600px;
+
+}
 header{
     color:rgb(240,240,240);
 }
-ul{
+.info{
   float: right;
   display: block;
+  position: relative;
+  left: 100px;
+}
+tr {
+  padding: 10px;
+  list-style-type: none;
 }
