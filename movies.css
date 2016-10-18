@@ -11,6 +11,7 @@ img{
 }
 .images{
   max-width: 600px;
+  margin: 10px;
 
 }
 header{
@@ -20,7 +21,8 @@ header{
   float: right;
   display: block;
   position: relative;
-  left: 100px;
+  left: 200px;
+  max-width: 300px;
 }
 tr {
   padding: 10px;
