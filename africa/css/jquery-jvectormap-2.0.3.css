@@ -8,11 +8,12 @@ svg {
     position: relative;
     overflow: hidden;
     touch-action: none;
+
 }
 
 .jvectormap-tip {
     position: absolute;
-    display: none;
+    display:none;
     border: solid 1px #CDCDCD;
     border-radius: 3px;
     background: #292929;
@@ -132,4 +133,7 @@ svg {
     vertical-align: middle;
     line-height: 20px;
     padding-left: 3px;
+}
+body {
+    background: pink;
 }

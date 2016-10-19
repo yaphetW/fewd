@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Africa</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -9,57 +10,110 @@
     <link rel="stylesheet" href="css/jquery-jvectormap-2.0.3.css" media="screen">
 
     <style>
-    #map {
-      height: 450px;
-    }
+        #map {
+            height: 450px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="map">
+    </div>
+    <div class="info">
+      Country Name:
+      Capital City:
+      Population:
+      Blah blah:
+
     </div>
 
     <script>
-    var countriesByCode = {
-      "DZ": {
-        name: "Algeria",
-        description: "...",
-        flag: "...",
-        pictures: ["..", ".."]
-      },
-      "EG": "Egypt",
-      "SD": "Sudan",
-      "ET": "Ethiopia"
-    }
+        var countriesByCode = {
+            "BF": "Burkina Faso",
+            "DJ": "Djibouti",
+            "BI": "Burundi",
+            "BJ": "Benin",
+            "ZA": "South Africa",
+            "BW": "Botswana",
+            "DZ": "Algeria",
+            "ET": "Ethiopia",
+            "RT": "Rwanda",
+            "TZ": "Tanzania",
+            "GQ": "Eq. Guinea",
+            "NA": "Namibia",
+            "NE": "Niger",
+            "NG": "Nigeria",
+            "TN": "Tunisia",
+            "LR": "Liberia",
+            "LS": "Lesotho",
+            "ZW": "Zimbabwe",
+            "TG": "Togo",
+            "ER": "Eritrea",
+            "LY": "Lybia",
+            "GW": "Guinea-Bassau",
+            "ZM": "Zambia",
+            "CI": "Cote d'Ivoire",
+            "EH": "W.Sahara",
+            "CM": "Cameroon",
+            "EG": "Egypt",
+            "SL": "Sierra Leone",
+            "CG": "Congo",
+            "CF": "Central African Rep.",
+            "AO": "Angola",
+            "CD": "Dem. Rep. Congo",
+            "GA": "Gabon",
+            "GN": "Guinea",
+            "GM": "Gambia",
+            "XS": "Somaliland",
+            "CV": "Cape Verde",
+            "GH": "Ghana",
+            "SZ": "Swaziland",
+            "MG": "Madagascar",
+            "MA": "Morocco",
+            "KE": "Kenya",
+            "SS": "S.Sudan",
+            "ML": "Mali",
+            "KM": "Comoros",
+            "ST": "Sao Tome and Principe",
+            "MW": "Malawi",
+            "SO": "Somalia",
+            "SN": "Senegal",
+            "MR": "Mauritania",
+            "UG": "Uganda",
+            "SD": "Sudan",
+            "MZ": "Mozambique",
+        }
 
-    var map = new jvm.Map({
-      map: "africa_mill",
-      container: $("#map"),
-      onRegionClick: function(e, code) {
-        console.log("clicked", code);
-        var country = countriesByCode[code];
+        var map = new jvm.Map({
+            map: "africa_mill",
+            container: $("#map"),
+            onRegionClick: function(e, code) {
+                console.log("clicked", code);
+                var country = countriesByCode[code];
 
-        displayCountryDetails(country);
-      },
-      series: {
-        regions: [{
-          attribute: 'fill'
-        }]
-      }
-    })
+                displayCountryDetails(country);
+            },
+            series: {
+                regions: [{
+                    attribute: 'fill'
+                }]
+            }
+        })
 
-    function displayCountryDetails(country) {
-      // console.log(country.name);
-      // console.log(country.description);
+        function displayCountryDetails(country) {
+            // console.log(country.name);
+            // console.log(country.description);
+            // Find the part of the page that shows the country's flag,
+            // create an image tag and append it to that part of the page.
+        }
 
-      // Find the part of the page that shows the country's flag,
-      // create an image tag and append it to that part of the page.
-    }
-
-    map.series.regions[0].setValues({
-      ET: "lightyellow",
-      DZ: "lightblue",
-
-    })
+        map.series.regions[0].setValues({
+            ET: "lightyellow",
+            DZ: "lightblue",
+            EG: "purple",
+            BF: "orange",
+        })
     </script>
-  </body>
+</body>
+
 </html>
