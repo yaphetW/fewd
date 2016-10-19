@@ -10,7 +10,7 @@
 
     <style>
     #map {
-      height: 600px;
+      height: 450px;
     }
     </style>
   </head>
@@ -35,19 +35,31 @@
       map: "africa_mill",
       container: $("#map"),
       onRegionClick: function(e, code) {
+        console.log("clicked", code);
         var country = countriesByCode[code];
 
         displayCountryDetails(country);
+      },
+      series: {
+        regions: [{
+          attribute: 'fill'
+        }]
       }
     })
 
     function displayCountryDetails(country) {
-      console.log(country.name);
-      console.log(country.description);
+      // console.log(country.name);
+      // console.log(country.description);
 
       // Find the part of the page that shows the country's flag,
       // create an image tag and append it to that part of the page.
     }
+
+    map.series.regions[0].setValues({
+      ET: "lightyellow",
+      DZ: "lightblue",
+
+    })
     </script>
   </body>
 </html>
