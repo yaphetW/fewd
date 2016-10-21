@@ -20,22 +20,41 @@
     <div id="map">
     </div>
     <div class="info">
-      Country Name:
-      Capital City:
-      Population:
-      Blah blah:
+        <img  class="flagspace">
+        <table class="info">
+            <tr>
+                <th>Country Name</th>
+                <td id="country"> </td>
+            </tr>
+            <tr>
+                <th>Capital City</th>
+                <td id="capital"> </td>
+            </tr>
+            <tr>
+                <th>Population</th>
+                <td id="population"> </td>
+            </tr>
+            <tr>
+                <th>Language</th>
+                <td id="language"> </td>
+            </tr>
+            <tr>
+                <th>Area</th>
+                <td id="area"> </td>
+            </tr>
 
+        </table>
     </div>
 
     <script>
         var countriesByCode = {
+            "DZ": "Algeria",
             "BF": "Burkina Faso",
             "DJ": "Djibouti",
             "BI": "Burundi",
             "BJ": "Benin",
             "ZA": "South Africa",
             "BW": "Botswana",
-            "DZ": "Algeria",
             "ET": "Ethiopia",
             "RT": "Rwanda",
             "TZ": "Tanzania",
@@ -81,7 +100,14 @@
             "MR": "Mauritania",
             "UG": "Uganda",
             "SD": "Sudan",
-            "MZ": "Mozambique",
+            "MZ": {
+                country_name: "Mozambique",
+                capital_city: "Maputo",
+                population: "24,692,144",
+                language: "Portuguese",
+                area: "309,496 sq mi",
+                flag: 'images/mozambique.png'
+            },
         }
 
         var map = new jvm.Map({
@@ -101,16 +127,28 @@
         })
 
         function displayCountryDetails(country) {
-            // console.log(country.name);
-            // console.log(country.description);
+            console.log(country.capital_city, country.country_name, country.population, country.language);
+            //console.log(country.description);
             // Find the part of the page that shows the country's flag,
             // create an image tag and append it to that part of the page.
+            var info = document.querySelector("#info");
+
+            document.querySelector("#country").textContent = country.country_name;
+            document.querySelector("#capital").textContent = country.capital_city;
+            document.querySelector("#population").textContent = country.population;
+            document.querySelector("#area").textContent = country.area;
+            document.querySelector("#language").textContent = country.language;
+
+            var flagspace = document.querySelector(".flagspace");
+
+            document.querySelector(".flagspace").setAttribute("src", country.flag);
+
         }
 
         map.series.regions[0].setValues({
             ET: "lightyellow",
             DZ: "lightblue",
-            EG: "purple",
+            EG: "lightgreen",
             BF: "orange",
         })
     </script>

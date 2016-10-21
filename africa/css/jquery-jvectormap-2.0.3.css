@@ -135,5 +135,19 @@ svg {
     padding-left: 3px;
 }
 body {
-    background: pink;
+    background: #8CAFD9;
 }
+.info {
+    background: white;
+    width: 80%;
+    height: 20%;
+    color: #8CAFD9;
+    border-radius: 10px;
+    text-align:left;
+    padding: 5px;
+  }
+  .flagspace {
+    width: 150px;
+    height: 90px;
+    border-radius:10px;
+  }
