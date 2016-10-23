@@ -12,6 +12,7 @@
     <style>
         #map {
             height: 450px;
+            background:transparent;
         }
     </style>
 </head>
@@ -20,7 +21,7 @@
     <div id="map">
     </div>
     <div class="info">
-        <img  class="flagspace">
+        <img class="flagspace">
         <table class="info">
             <tr>
                 <th>Country Name</th>
@@ -99,7 +100,10 @@
             "SN": "Senegal",
             "MR": "Mauritania",
             "UG": "Uganda",
-            "SD": "Sudan",
+            "SD": {
+                country_name: "Sudan",
+                capital_city: "Khartoum"
+            },
             "MZ": {
                 country_name: "Mozambique",
                 capital_city: "Maputo",
@@ -127,22 +131,46 @@
         })
 
         function displayCountryDetails(country) {
-            console.log(country.capital_city, country.country_name, country.population, country.language);
-            //console.log(country.description);
-            // Find the part of the page that shows the country's flag,
-            // create an image tag and append it to that part of the page.
-            var info = document.querySelector("#info");
 
-            document.querySelector("#country").textContent = country.country_name;
+          var url = "https://restcountries.africa/rest/v1/"
+ + country;
+            //call out the desctiptions to see if they show up
+          //  console.log(country.capital_city, country.country_name, country.population, country.language);
+
+            //define the div where everything goes
+            var info = document.querySelector("#info");
+            //change the text content
+            $.get(url, display);
+
+            function display (results) {
+              document.querySelector(".country").textContent = results.capital;
+              document.querySelector(".capital").textContent = results.Year;
+              document.querySelector(".population").textContent = results.Rating;
+              document.querySelector(".language").textContent = results.Runtime;
+              document.querySelector(".area").textContent = results.Plot;
+            }
+
+            /*document.querySelector("#country").textContent = country.country_name;
             document.querySelector("#capital").textContent = country.capital_city;
             document.querySelector("#population").textContent = country.population;
             document.querySelector("#area").textContent = country.area;
-            document.querySelector("#language").textContent = country.language;
-
+            document.querySelector("#language").textContent = country.language;*/
+            //define a space for the img (flags)
             var flagspace = document.querySelector(".flagspace");
 
             document.querySelector(".flagspace").setAttribute("src", country.flag);
 
+            function getInfo(event) {
+                var countrySelected = event.target;
+                var capitalCity = selected.code;
+                var url = "https://restcountries.africa/rest/v1/" + country;
+
+                $.get(url, display);
+            }
+
+            function display(results) {
+
+            }
         }
 
         map.series.regions[0].setValues({
