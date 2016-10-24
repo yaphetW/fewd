@@ -1,3 +1,9 @@
+.choose {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 0;
+}
 svg {
     touch-action: none;
     background: #8CAFD9;

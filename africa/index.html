@@ -12,12 +12,14 @@
     <style>
         #map {
             height: 450px;
-            background:transparent;
         }
     </style>
 </head>
 
 <body>
+  <div class="choose">
+    Click on a country to learn more!
+  </div>
     <div id="map">
     </div>
     <div class="info">
@@ -48,6 +50,7 @@
     </div>
 
     <script>
+
         var countriesByCode = {
             "DZ": "Algeria",
             "BF": "Burkina Faso",
@@ -174,10 +177,58 @@
         }
 
         map.series.regions[0].setValues({
-            ET: "lightyellow",
-            DZ: "lightblue",
-            EG: "lightgreen",
-            BF: "orange",
+            BF: "lightyellow",  DJ: "lightblue",BI: "lightgreen",BJ: "#E6B8B3",ZA: "gray",BW: "#E4E1AF",  DZ: "#C9EDD2",
+            ET: "#4044BF",
+            RW: "#C3C2EB",
+            TZ: "#BAE4E8",
+            GQ:"#A3D2E0",
+            NA: "#A3B7E0",
+            NE: "#B6B3E6",
+            NG: "#E9BEDB",
+            TN: "#D9B6E7",
+            LR: "#D9B6E7",
+            LS: "#BF4640",
+            ZW: "#D98CB5",
+            TG: "#CB6289",
+            TD: "#CF6EAE",
+            ER: "#2F7C8E",
+            LY: "#8E532F",
+            GW: "#7966CC",
+            ZM: "#BB533E",
+            CI: "#3DB89D",
+            EH: "#307391",
+            SL: "#216343",
+            CG: "#BB8E3E",
+            AO: "#E9DDBE",
+            CD: "#A3E0D9",
+            GA: "#B3BBE6",
+            GN: "#71C8D0",
+            GM: "#D17578",
+            XS: "#D6B3E6",
+            CV: "#475AC2",
+            GH: "#BF554",
+            SZ: "#BF6F4",
+            MG: "#C89CDE",
+            MA: "#A6DA90",
+            KE: "#AFC3E4",
+            SS: "#E6CEB3",
+            ML: "#E1BEE9",
+            KM: "#BF4073",
+            ST: "#E4AFC4",
+            MW: "#86742D",
+            SO: "#CB62A6",
+            SN: "#D5A881",
+            MR: "#BF4040",
+            UG: "#7598D1",
+            SD: "grey",
+            MZ: "#ECF8F9",
+            EG: "#58C144",
+            CF: "#A83A38",
+            MG: "yellow",
+            MZ: "orange",
+            CM: "yellow",
+            BF: "#576FC7",
+
         })
     </script>
 </body>
