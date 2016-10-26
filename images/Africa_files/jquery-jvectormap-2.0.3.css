@@ -145,7 +145,7 @@ body {
 }
 .info {
     background: #A3CBE0;
-    width: 80%;
+    width: 50%;
     height: 30%;
     color:white;
     border-radius: 10px;
@@ -153,6 +153,7 @@ body {
     padding: 5px;
     margin: 0 auto;
     font-family: "Lucida Grande";
+    position: relative;
     bottom: 250px;
     right: 250px;
 
