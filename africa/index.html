@@ -22,7 +22,7 @@
     </div>
     <div id="map">
     </div>
-    <div class="info">
+    <div class="box">
         <img class="flagspace">
         <table class="info">
             <tr>
@@ -84,7 +84,7 @@
                 "capital_city": "Porto-Novo",
                 "population": "8439000",
                 "language": "French",
-                flag:'images/benin.gif'
+                flag: 'images/benin.gif'
             },
             "ZA": {
                 "country_name": "South Africa",
@@ -227,11 +227,11 @@
                 flag: "images/wsahara.gif"
             },
             "CM": {
-              "country_name": "Cameroon",
-              "capital_city": "Yaoundé",
-              "population": "17,795,000",
-              "language": "English, French",
-            flag: 'images/cameroon.gif'
+                "country_name": "Cameroon",
+                "capital_city": "Yaoundé",
+                "population": "17,795,000",
+                "language": "English, French",
+                flag: 'images/cameroon.gif'
             },
             "EG": {
                 "country_name": "Egypt",
@@ -302,7 +302,7 @@
                 "population": "4,500,000",
                 "language": "Somali, Arabic, English",
                 flag: 'images/somaliland.gif'
-              },
+            },
             "CV": {
                 "country_name": "Cape Verde",
                 "capital_city": "Praia",
@@ -458,7 +458,7 @@
             var flagspace = document.querySelector(".flagspace");
 
             document.querySelector(".flagspace").setAttribute("src", country.flag);
-
+            document.querySelector(".info").style.visibility = "visible";
             /*  function getInfo(event) {
                   var countrySelected = event.target;
                   var capitalCity = selected.code;
