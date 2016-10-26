@@ -2,8 +2,7 @@
     color: white;
     font-size: 20px;
     text-align: center;
-    margin: 20px 0 40px;
-    font-family: "Lucida Grande";
+    margin: 30px 0;
 }
 svg {
     touch-action: none;
@@ -20,6 +19,7 @@ svg {
 
 .jvectormap-tip {
     position: absolute;
+    display:none;
     border: solid 1px #CDCDCD;
     border-radius: 3px;
     background: #292929;
@@ -155,7 +155,13 @@ body {
     font-family: "Lucida Grande";
     bottom: 250px;
     right: 250px;
-
+    width: 80%;
+    height: 20%;
+    color: #8CAFD9;
+    border-radius: 10px;
+    text-align:left;
+    padding: 5px;
+    color: white;
   }
   .flagspace {
     width: 150px;
