@@ -27,7 +27,7 @@
 
 svg {
     touch-action: none;
-    background: #8CAFD9;
+    background: red;
 }
 
 .jvectormap-container {
@@ -288,7 +288,4 @@ body {
   .jvectormap-container {
       width: 100%;
       height: 300%;
-}
-svg {
-    background:red;
 }
