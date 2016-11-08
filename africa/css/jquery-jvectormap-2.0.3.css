@@ -289,3 +289,6 @@ body {
       width: 100%;
       height: 300%;
 }
+svg {
+    background: #8CAFD9;
+}
