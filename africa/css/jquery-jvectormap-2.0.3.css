@@ -284,7 +284,7 @@ body {
     bottom: 200px;
     left: 10px;
 }
-@media(max-width: 500px)
+@media (max-width: 500px)
 .jvectormap-container {
       width: 100%;
       height: 300%;
@@ -292,12 +292,23 @@ body {
 .all {
     margin-top: 200px;
 }
-.jvectormap-container{
-  height: 100%;
-  width: 100%;
+.jvectormap-container {
+  height: 170%;
+  width: 110%;
 }
 svg {
-    height: 200%;
-    width: 200%
-
+    height: 100%;
+    width: 100%;
+}
+.flagspace {
+  position: relative;
+  top: 10px;
+  width: 20%;
+  height: 40%;
+}
+.info {
+  position: relative;
+  top: 15px;
+  width: 30%;
+  height: 40%;
 }
