@@ -297,18 +297,18 @@ body {
   width: 110%;
 }
 svg {
-    height: 100%;
-    width: 100%;
+    height: 130%;
+    width: 130%;
 }
 .flagspace {
   position: relative;
   top: 10px;
-  width: 20%;
-  height: 40%;
+  width: 30%;
+  height: 5%;
 }
 .info {
   position: relative;
   top: 15px;
-  width: 30%;
-  height: 40%;
+  width: 40%;
+  height: 60%;
 }
