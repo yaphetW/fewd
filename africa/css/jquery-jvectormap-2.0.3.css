@@ -284,11 +284,20 @@ body {
     bottom: 200px;
     left: 10px;
 }
-@media(max-width: 500px){
-  .jvectormap-container {
+@media(max-width: 500px)
+.jvectormap-container {
       width: 100%;
       height: 300%;
 }
+.all {
+    margin-top: 200px;
+}
+.jvectormap-container{
+  height: 100%;
+  width: 100%;
+}
 svg {
-    margin: auto 0;
+    height: 200%;
+    width: 200%
+
 }
