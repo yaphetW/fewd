@@ -295,15 +295,15 @@ body {
 }
 .jvectormap-container {
   height: 170%;
-  width: 110%;
+  width: 170%;
 }
 svg {
-    height: 130%;
-    width: 130%;
+    height: 170%;
+    width: 170%;
 }
 .flagspace {
   position: relative;
-  top: 20px;
+  top: 18px;
   width: 35%;
   height: 25%;
 }
@@ -312,6 +312,6 @@ svg {
   top: 25px;
   width: 55%;
   height: 100%;
-  font-size: 25px;
+  font-size: 65px;
 }
 }
