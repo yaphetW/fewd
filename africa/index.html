@@ -18,7 +18,7 @@
 
 <body>
     <div class="all">
-      
+
     <div class="choose">
         Click on a country to learn more!
     </div>
@@ -439,6 +439,8 @@
                 var country = countriesByCode[code];
 
                 displayCountryDetails(country);
+                var url = "https://restcountries.eu/rest/v1/all" + country;
+                $.get(url, displayCountryDetails);
             },
             series: {
                 regions: [{
@@ -447,7 +449,8 @@
             }
         })
 
-        function displayCountryDetails(country) {
+
+        function displayCountryDetails(results) {
 
             //call out the desctiptions to see if they show up
             //  console.log(country.capital_city, country.country_name, country.population, country.language);
@@ -459,7 +462,7 @@
             document.querySelector("#capital").textContent = country.capital_city;
             document.querySelector("#population").textContent = country.population;
             document.querySelector("#area").textContent = country.area;
-            document.querySelector("#language").textContent = country.language;
+            document.querySelector("#language").textContent = results;
             //define a space for the img (flags)
             var flagspace = document.querySelector(".flagspace");
 
